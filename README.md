@@ -1,8 +1,8 @@
-# funksteckdose c1101 example
+# funksteckdose cc1101 example
 
 Embedded rust example for WeAct STM32F411 MiniF4.
 This uses a fork of the `funksteckdose` crate (forked to enable `no_std`) and
-a fork of the `c1101` crate (forked to allow transmitting).
+a fork of the `cc1101` crate (forked to allow transmitting).
 
 The application toggles an rc switch when the user key is pressed.
 
