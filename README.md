@@ -9,9 +9,9 @@ The application toggles an rc switch when the user key is pressed.
 `funksteckose` is a partial reimplementation of `rc-switch`,
 so for more details see [https://github.com/sui77/rc-switch].
 
-# c1101 module
+# cc1101 module
 
-c1101 module is connected over SPI (pins A7 to A4) and GDO0 (pin A3).
+cc1101 module is connected over SPI (pins A7 to A4) and GDO0 (pin A3).
 GDO0 is used to transmit data in asynchronous mode/compatibility mode -
 this lets the c1101 module be used in the same way as more common, simpler modules.
 
