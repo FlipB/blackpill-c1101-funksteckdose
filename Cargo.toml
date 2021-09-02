@@ -1,0 +1,28 @@
+[package]
+name = "blackpill-c1101-funksteckdose"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+embedded-hal = "0.2"
+nb = "1.0.0"
+cortex-m = "0.7.1"
+cortex-m-rt = "0.6"
+panic-halt = "0.2"
+# cc1101 = { git = "https://github.com/dsvensson/cc1101" }
+cc1101 = { git = "https://github.com/flipb/cc1101" }
+funksteckdose = {  git = "https://github.com/flipb/funksteckdose", default-features = false, features = [ "embedded-hal" ] }
+
+[dependencies.rtt-target]
+version = "0.3.0"
+features = ["cortex-m"]
+
+[dependencies.stm32f4xx-hal]
+version = "0.9.0"
+features = ["rt", "stm32f411"]
+
+[profile.dev]
+debug = 1 # this is the default in dev mode
+
+[profile.release]
+debug = 1 # enable debug info also in release mode
